@@ -7,7 +7,7 @@
  * @noflow
  * @nolint
  * @preventMunge
- * @generated SignedSource<<d28e4dd00bb1cfa661197e7f84b95b35>>
+ * @generated SignedSource<<d8d116ddaaca5dd258c36f97bbb0e91c>>
  */
 
 "use strict";
@@ -198,6 +198,7 @@ exports.preloadModule = function (href, options) {
         crossOrigin: crossOrigin,
         integrity:
           "string" === typeof options.integrity ? options.integrity : void 0,
+        nonce: "string" === typeof options.nonce ? options.nonce : void 0,
         fetchPriority:
           "string" === typeof options.fetchPriority
             ? options.fetchPriority
@@ -217,4 +218,4 @@ exports.useFormState = function (action, initialState, permalink) {
 exports.useFormStatus = function () {
   return ReactSharedInternals.H.useHostTransitionStatus();
 };
-exports.version = "19.3.0-native-fb-68631c04-20260626";
+exports.version = "19.3.0-native-fb-6befd1ae-20260629";
